@@ -1,0 +1,5 @@
+faster-whisper
+nvidia-cublas-cu12
+nvidia-cudnn-cu12>=9,<10
+icalendar
+recurring-ical-events
