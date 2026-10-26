@@ -1,9 +1,15 @@
 {
-  "source_dir": "C:\\Users\\U301-8\\OneDrive\\문서\\소리 녹음",
+  "source_dirs": [
+    "C:\\Users\\U301-8\\OneDrive\\문서\\소리 녹음",
+    "C:\\Users\\U301-8\\OneDrive\\문서\\강의 inbox"
+  ],
   "output_dir": "C:\\code\\택스트 변환기\\강의정리",
-  "audio_extensions": [".m4a", ".mp3", ".wav", ".aac", ".flac", ".ogg", ".wma", ".mp4"],
+  "audio_extensions": [".m4a", ".mp3", ".wav", ".aac", ".flac", ".ogg", ".wma"],
+  "video_extensions": [".mp4", ".mkv", ".mov", ".webm", ".avi"],
+  "note_extensions": [".txt", ".md"],
   "skip_if_modified_within_sec": 120,
   "copy_audio": true,
+  "copy_video": false,
 
   "whisper": {
     "model": "large-v3-turbo",
@@ -35,6 +41,14 @@
   },
 
   "known_lectures": ["데이터베이스 설계", "소프트웨어 분석 설계", "AI 모델 분석 설계", "머신러닝", "고급 알고리즘", "컴퓨터 비전"],
+  "lecture_aliases": {
+    "데이터베이스 설계": ["디비 설계", "DB 설계", "데이터베이스"],
+    "소프트웨어 분석 설계": ["소분설", "SW 분석 설계", "소프트웨어 분석 및 설계"],
+    "AI 모델 분석 설계": ["에분설", "AI 분석 설계"],
+    "머신러닝": ["ML", "기계학습"],
+    "고급 알고리즘": ["고급알고", "알고리즘"],
+    "컴퓨터 비전": ["CV", "컴비"]
+  },
 
   "timetable_period": ["2026-09-01", "2026-12-20"],
   "timetable": [
@@ -45,5 +59,19 @@
     {"강의명": "머신러닝",            "요일": "수", "시작": "10:00", "종료": "13:00"},
     {"강의명": "고급 알고리즘",        "요일": "목", "시작": "10:00", "종료": "13:00"},
     {"강의명": "컴퓨터 비전",          "요일": "목", "시작": "14:00", "종료": "17:00"}
-  ]
+  ],
+
+  "notes": {
+    "questions": 5,
+    "max_per_run": 20
+  },
+
+  "notion": {
+    "enabled": false,
+    "parent_page_url": "",
+    "database_id": "",
+    "database_title": "강의 노트",
+    "include_transcript": true,
+    "token_env": "NOTION_TOKEN"
+  }
 }

@@ -1,0 +1,8 @@
+{
+  "folders": [
+    {"id": "recordings", "label": "소리 녹음", "laptop_path": "C:\\Users\\U301-8\\OneDrive\\문서\\소리 녹음"},
+    {"id": "videos",     "label": "동영상",   "laptop_path": ""}
+  ],
+  "main_base_dir": "D:\\강의자료",
+  "keep_deleted_on_main": true
+}

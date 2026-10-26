@@ -1,6 +1,10 @@
-# 가상환경 / 캐시
+# 비밀값 (노션 토큰 등)
+secrets.json
+
+# 가상환경 / 캐시 / 편집기
 .venv/
 __pycache__/
+.vscode/
 
 # Whisper 모델 (수 GB)
 models/
